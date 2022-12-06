@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "ts-node": {
     "transpileOnly": true,
     "files": true,
@@ -8,7 +9,7 @@
     "jsx": "react",
     "outDir": "./dist",
     "module": "es2022",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "allowJs": true,
     "noImplicitAny": true,
     "declaration": true,
@@ -24,5 +25,6 @@
     "isolatedModules": true,
     "noEmit": false
   },
-  "include": ["src/**/*", "src/external/newgrounds/newgroundsio.min.js"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

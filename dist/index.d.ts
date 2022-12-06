@@ -1,5 +1,5 @@
-declare function helloWorld(): void;
+declare function recursePath(path: string, file: File): void;
 declare const exports: {
-    helloWorld: typeof helloWorld;
+    recursePath: typeof recursePath;
 };
 export default exports;
